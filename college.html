@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EDUCITY</title>
+    <meta name="viewport" content="width=device-width,initial-space=1.0">
+    <link rel="stylesheet" href="college.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--use google fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/70c542d66f.js" crossorigin="anonymous"></script>
+</head>
+<body >
+    <!--the <div> tag is a generic container for styling and layout purposes, while the <section> tag is used to create meaningful content divisions or sections within an HTML document.
+-->
+<section class="header">
+<nav>
+    <a href="college.html"><img src="imageees/c9.jpg"></a><!--if you wrap an image in an a tag the image is clickable, it will direct you to the href of the a tag. So if you want the image to click to the source of the image. You have to use the same url to the image in the href.-->
+<!--img tag says RENDER(give or supply) this href attribute says GO here-->
+<div class="nav-links" id="navLinks"><!--In the JavaScript code var navLinks = document.getElementById('navLinks');, navLinks is like a special pointer or label that allows you to easily work with a specific part of a web page.So, when you use navLinks in your JavaScript code, you're actually working with the HTML element on the web page that has the "navLinks" ID-->
+    <i class="fa fa-xmark" onclick="hideMenu()"></i>
+    <ul>
+        <li><a href="college.html">HOME</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="course.html">COURSE</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<div class="text-box">
+    <h1>World's Biggest University</h1>
+    <p>"Welcome to Educity,where dreams take flight and knowledge knows no bounds."<br> Join us on a journey of discovery and excellence.</p>
+    <a href="#" class="hero-btn">Visit Us To Know More</a>
+</div>
+</section>
+<!--COURSE-->
+
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>
+        Our college offers a wide range of courses designed to cater to diverse interests and career aspirations. Whether you're looking to pursue a degree in the sciences, humanities, business, or the arts, we have a program to suit your needs. Our dedicated faculty and state-of-the-art facilities ensure that you receive a comprehensive and enriching educational experience. From undergraduate programs that provide a strong foundation to advanced degrees that delve deep into specialized fields, our courses are designed to empower you with the knowledge and skills necessary for success in your chosen path. Explore our course offerings and embark on an educational journey that will help you achieve your goals and unlock your full potential
+    </p>
+    <div class="row">
+    <div class="course-col">
+      <h3>Intermediate</h3>
+      <p> Our college offers a diverse range of intermediate programs to prepare students for their academic and career aspirations. Whether you're pursuing the sciences, humanities, commerce, or fine arts, our experienced faculty provides a supportive and enriching environment to foster your intellectual growth. Explore our intermediate offerings and set a solid foundation for your future endeavors.</p>
+    </div>
+    <div class="course-col">
+        <h3>Degree</h3>
+        <p>We offer a wide range of undergraduate and graduate degree programs to help you achieve your educational and career goals. Our dedicated faculty and state-of-the-art facilities provide a dynamic learning environment where you can explore your passions and gain the skills and knowledge needed to excel in your chosen field. Whether you're looking to kickstart your career, switch professions, or simply expand your horizons, our diverse degree offerings cater to a variety of interests and aspirations. Discover the right degree for you and embark on a journey of academic and personal growth.</p>
+    </div>
+    <div class="course-col">
+        <h3>Post Graduate</h3>
+        <p>Discover advanced academic opportunities at our college through our diverse range of postgraduate programs. Whether you're looking to deepen your expertise in a specific field, advance your career, or explore a new area of study, our postgraduate offerings provide the perfect platform for your ambitions. With dedicated faculty, cutting-edge research opportunities, and a vibrant campus community, you'll find an environment that fosters intellectual growth and innovation. Explore our postgraduate options and take the next step towards achieving your educational and professional goals.</p>
+    </div>
+</div>
+</section>
+<!--CAMPUS-->
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Discover our vibrant and modern campus, where learning meets innovation. Explore state-of-the-art facilities, lush green spaces, and a welcoming community that fosters academic excellence. From cutting-edge libraries to world-class laboratories, our campus is designed to inspire your educational journey. Join us and experience the heart of academic life on our beautifully landscaped grounds.</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="./imageees/c15.jpg">
+            <div class="layer">
+                <h3>LONDON</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="./imageees/c10.jpg">
+            <div class="layer">
+                <h3>NEWYORK</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="./imageees/c16.jpg">
+            <div class="layer">
+                <h3>WASHINGTON</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<!--FACILITIES-->
+<section class="facilities">
+    <h1>Facilities</h1>
+    <p>Discover our state-of-the-art facilities at Educity. Our campus boasts modern classrooms equipped with the latest technology, a well-stocked library, and advanced laboratories for hands-on learning. You'll also find a vibrant student center, sports facilities, and a comfortable dormitory to meet your academic and recreational needs. With a focus on creating an enriching educational experience, we provide the resources and spaces to support your growth and success.</p>
+    <div class="row">
+        <div class="facilities-col">
+        <img src="imageees/c8.jpg">
+       
+            <h3>World's Largest Library</h3>
+            <p> The Heart of Knowledge Our college library is more than just a collection of books; it's a treasure trove of learning resources. </p>
+    </div>
+          <div class="facilities-col">
+            <img src="imageees/c5.jpg">
+            <h3>Largest Playground</h3>
+            <p>Experience the thrill of fast-paced action and friendly competition on our state-of-the-art basketball court. </p>
+
+        </div>
+        <div class="facilities-col">
+            <img src="imageees/c6.jpg">
+            <h3>Tasty and Healthy Food</h3>
+            <p> Our college cafeteria is a hub of deliciousness and community. With a diverse menu to cater to all tastes and dietary preferences.</p>
+        </div>
+
+    </div>
+</section>
+<!--FEEDBACK-->
+<section class="testimonials">
+    <h1> What Our Student Says</h1>
+    <p>Discover what our students and alumni have to say about their transformative college experience</p>
+<div class="row">
+    
+    <div class="testimonials-col">
+        <img src="imageees/c17.jpg">
+        <div>
+            <p>
+                "Studying at this college has been a life-changing experience. The exceptional faculty, engaging courses, and supportive community have empowered me to explore my passions and develop critical skills.
+            </p>
+            <h3>OLIVIA SOPHIA</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+    </div>
+    
+    <div class="testimonials-col">
+        <img src="imageees/c13.jpg">
+        <div>
+            <p>
+                "Attending this college has been an incredible journey of self-discovery and growth. The nurturing environment and supportive faculty allowed me to explore my passions and excel academically.</p>
+            <h3>MICHEAL ANDREW</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+        </div>
+    </div>
+</div>
+</section>
+
+<!--CONTACT US-->
+<section class="cta">
+    <h1>Enroll For Our Online Courses<br> Anywhere From The World </h1>
+    <a href="" class="red-btn">Contact Us</a>
+
+</section>
+
+<!--FOOTER-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Welcome to Educity, where excellence in education meets a nurturing environment.Established in 1995, we have been committed to fostering academic growth and personal development.<br> Our dedicated faculty, state-of-the-art facilities, and a vibrant campus community create a holistic learning experience.</p>
+<div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i>
+    <i class="fa fa-twitter"></i>
+</div>
+<p>Made With <i class="fa fa-heart-o"></i> By Easy Tutorials</p>
+</section>
+<!--Javascript code for toggle menu-->
+<script>
+    var navLinks=document.getElementById('navLinks');
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>

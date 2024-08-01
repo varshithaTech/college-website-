@@ -1,0 +1,531 @@
+*{
+    margin:0%;
+    padding:0%;
+    font-family: 'Roboto', sans-serif;
+}/* for all elements in the body */
+.header{/*it is for image */
+    min-height:100vh;
+    min-width:100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imageees/c3.avif);/* where images are used linear gradient can be used*/ 
+background-size:cover;
+background-position:center;
+position:relative;/*Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position.properties->justify-content &align-items*/
+}
+nav{
+    display:flex;/*The flex container can change the width, height and order of the child elements.*/
+    justify-content:space-between;
+    align-items:center;/*align-items: center; The flexbox items are aligned at the center of the cross axis. By default, the cross axis is vertical. */
+    padding:2% 6%;
+}
+
+nav img{
+    width:150px;/*% is better for responsive designs, you can use px for fixed-sized elements, mostly px is used inside the @media queries*/
+}
+ .nav-links{/*it is for ul*/
+    flex:1;
+    text-align:right;
+ }
+ .nav-links ul li{
+    list-style:none;
+     display:inline-block;
+     padding:8px 12px;
+     position:relative;
+
+ }
+ .nav-links ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:15px;
+ }
+ /* it is for the hover effect in the ul*/
+ .nav-links ul li::after{
+    content:'';
+width:0%;/* if the width:100% it is displayed if it is 0% it is hidden*/
+height:2px;
+background:#f44336;
+display:block;
+margin:auto;
+transition:0.5s;
+ }
+ .nav-links ul li:hover::after{
+    width:100%;
+ }
+ /*it is for the text to be displayed in the home page*/
+ .text-box{
+    width:90%;
+    color:#fff;
+    position:absolute;/* The position: absolute property is used for, allowing you to specify its exact position using properties like top, right, bottom, and left.*/
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);/*it will be center of this div*/
+    text-align:center;
+ }
+ .text-box h1{
+    font-size:62px;
+ }
+.text-box p{
+    margin: 10px 0 40px;
+    font-size:14px;
+    color:#fff;
+}
+/*designing visit us to know more*/
+.hero-btn{
+    display:inline-block;
+    padding:12px 34px;
+    border:2px solid #fff;
+    text-decoration:none;
+    position:relative;
+    color:#fff;
+    background:transparent;
+    font-size:12px;
+    cursor:pointer;/*In summary, while it's not always necessary to declare cursor: pointer for <a> tags because they often have it by default, doing so explicitly in your CSS can provide greater control and consistency in your website's design.
+*/
+}
+/*it is for hover effect in the button*/
+.hero-btn:hover{
+border:2px solid #f33446;
+background:#f33446;
+transition:1s;
+}
+/*icon display*/
+nav .fa{
+    display:none;
+}
+/*to make it visible in mobile screen*/
+@media(max-width:700px){
+    /* to set size for the tex-box in the mobile view*/
+
+    .text-box h1{
+        font-size:20px;
+    }
+    /*to set the ul to be displayed vertically */
+.nav-links ul li{
+    display:block;/*display: block primarily affects how elements flow within the document layout, making them full-width and stacked vertically.*/
+}
+/* designing the nav-links with the color */
+.nav-links{
+    position:fixed;
+    top:0;
+    right:-200px;
+    height:100vh;
+    width:200px;
+    text-align:left;
+    background:#f33446;
+    z-index:2;
+    transition:1s;
+}
+/*designing the icons and making it to be displayed in the right place*/
+nav .fa{
+    display:block;
+    color:#fff;
+    margin:10px;
+    font-size:20px;
+    cursor:pointer;
+
+}
+nav ul {
+    padding:40px;
+}
+}
+/*courses we offer*/
+
+.course{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+
+}
+h1{
+    font-size:36px;
+    font-weight:600;
+}
+p{
+    color:#777;
+    font-size:14px;
+    font-weight:300;
+    line-height:22px;
+    padding:10px;
+}
+/* making it as a box*/
+.row{
+    margin-top:5%;
+    display:flex;/* display:flex has properties like justify-content and so on*/
+    justify-content:space-between;
+}
+/*designing with color*/
+.course-col{
+    box-sizing:border-box;/* padding and border are included in this property in an elemnts width and height*/
+    padding:20px 12px;
+    border-radius:10px;
+    flex-basis:31%;/*initial width note:if it is not a flexible item then it is not possible */
+  
+    background:#fff3f3;
+    margin-bottom:5%;
+}
+/*designing the font*/
+h3{
+
+    text-align:center;
+    font-weight:600;
+    margin:10px 0;/* top&bottom and left&right*/
+}
+/*hover effect*/
+.course-col:hover{
+    box-shadow:0 0 20px 0 rgba(0,0,0,0.2);
+}
+/*Horizontal offset: 0
+Vertical offset: 0
+Blur radius: 20px
+Spread radius: 0
+Color: rgba(0, 0, 0, 0.2)*/
+@media(max-width:700px){
+    .row{
+
+    flex-direction:column;
+}
+}
+/* for the campus section*/
+.campus{
+    text-align:center;
+    margin:auto;
+    padding-top:50px;
+    width:80%;
+}
+.campus-col{
+    flex-basis:32%;
+    margin-bottom:30px;
+    border-radius:10px;
+    position:relative;
+    overflow:hidden;
+}
+.campus-col img{
+    width:100%;
+    display:block;
+}
+.layer{
+    background:transparent;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.layer:hover{
+    background:rgba(226,0,0,0.7);
+}
+.layer h3{
+    width:100%;
+    color:#fff;
+    font-weight:500;
+    font-size:26px;
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translateX(-50%);
+    opacity:0;
+    transition:0.5s;
+}  
+.layer:hover h3{
+    opacity:1;
+    bottom:49%;
+}  /*it makes the images to be aligned in the proper manner*/
+.facilities{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    padding-top:100px;
+}  
+ 
+.facilities-col{
+    flex-basis:31%;
+    margin-bottom:5%;
+    border-radius:10px;
+    text-align:left;
+
+} 
+     /*it is for perfect size of the image */                                                             
+.facilities-col img{
+    width:100%;
+    border-radius:5px;
+}
+.facilities-col p{
+    padding:0;
+}
+/*to make our text to be aligned in the left*/
+.facilities-col h3{
+    margin-top:15px;
+    margin-bottom:16px;
+    text-align:left;
+}
+/*testimonials it makes the text to be displayed in the center*/
+.testimonials{
+width:80%;
+margin:auto;
+padding-top:100px;
+text-align:center;
+
+}
+/*designing the image and the background*/
+.testimonials-col {
+    flex-basis:44%;
+    border-radius:10px;
+    margin-bottom:5%;
+    text-align:left;
+    padding:25px;
+    background:#fff3f3;
+    display:flex;
+    cursor:pointer;
+}
+/*it gives a circle shape*/
+.testimonials-col img{
+    height:40px;
+    margin-left:5px;
+    margin-right:30px;
+    border-radius:50%;
+    
+}
+.testimonials-col p{
+    padding:0;
+}
+/*it aligns the text to be aligned in the left*/
+.testimonials-col h3{
+    margin-top:15px;
+    margin-bottom:5%;
+    text-align:left;
+}
+/*color for the star */
+.testimonials-col fa{
+    color:#f44336;
+
+}
+/*  aligning it in the correct position*/
+@media(max-width:700px){
+    .testimonials-col img{
+        margin-left:0px;
+        margin-right:15px;
+    }
+}
+.cta{
+    margin:100px auto;
+    width:80%;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imageees/c4.webp);
+    background-position:center;
+    background-size:cover;
+    text-align:center;
+    padding:100px 0; 
+    border-radius:10px;
+}
+.cta h1{
+    color:#fff;
+    margin-bottom:40px;
+    padding:0;
+
+}
+@media(max-width:700px){
+    .cta h1{
+        font-size:24px;
+    }
+}
+.footer{
+    width:100%;
+    text-align:center;
+    padding:30px 0;
+}
+.footer h4{
+margin-top:25px;
+margin-bottom:20px;
+font-weight:600;
+}
+.icons .fa{
+    color:#f44336;
+    margin:0 13px;
+    cursor:pointer;
+    padding:18px 0;
+}
+.fa-heart-o{
+    color:#f44336;
+
+} 
+/*about.html*/
+/*sub-header*/
+.sub-header{
+    height:50vh;
+    width:100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(imageees/c2.jpg);
+    background-position:center;
+    background-size:cover;
+    text-align:center;
+    color:#fff;
+
+}
+.sub-header h1{
+    margin-top:100px;
+}
+/*about-us section */
+.about-us{
+    width:80%;
+    margin:auto;
+    padding-top:80px;
+    padding-bottom:50px;
+
+}
+/* aligning the text */
+.about-col{
+    flex-basis:48%;
+    padding:30px 2px;
+
+}
+/* making the image to be smaller*/
+.about-col img{
+    width:100%;
+}
+.about-col h1{
+    padding:0;
+}
+/* title of the about-col*/
+.about-col p{
+    padding:15px 0 25px;
+}
+/* for the hover effect */
+.red-btn{
+    border:1px solid #f33446;
+    color:#f33446;
+    background:transparent;
+}
+.red-btn:hover{
+    color:#fff;
+}
+/* blog.html*/
+.blog-content{
+    width:80%;
+    margin:auto;
+    padding:60px 0;
+
+}
+/*blog-left div class */
+.blog-left{
+    flex-basis:65%;
+}
+.blog-left img{
+    width:100%;
+}
+.blog-left h2{
+    margin:30px 0;
+    color:#222;
+    font-weight:600;
+}
+/*blog-left paragraph designing*/
+.blog-left p{
+    color:#999;
+    padding:0;/*By setting the padding to zero, you are effectively removing any spacing between the content and the border of the element.PURPOSE->consistent spacing in your web design.*/
+}
+/*blog-right*/
+.blog-right {
+flex-basis:32%;
+}
+/*aligns the heading and the text in a position*/
+.blog-right h3{
+    background:#f33446;
+    color:fff;
+    margin-bottom:20px;
+    padding:7px 0;
+    font-size:16px;
+    
+}
+/*display a box */
+.blog-right div{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    color:#555;
+    box-sizing:border-box;
+    padding:8px;
+}
+/*The <textarea> tag defines a multi-line text input control.
+
+The <textarea> element is often used in a form, to collect user inputs like comments or reviews.*/
+/*creating a border for the comment box*/
+.comment-box{
+    border: 1px solid #ccc;
+    margin:50px 0;
+    padding:10px 20px;
+}
+.comment-box h3{
+    text-align:left;
+}
+/* outline->An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".*/
+/* outline:none;-> remove the outline which will be present above the border*/
+/* creating a small boxes and designing the form*/
+.comment-form input,.comment-form textarea{
+    width:100%;
+    margin:15px 0;
+    padding:10px;
+    background:#f0f0f0;
+    border:none;
+    outline:none;
+    box-sizing:border-box;
+}
+/*creating a space between each boxes which will be moverd top and bottom*/
+.comment-form button{
+    margin:10px 0;
+}
+/*making the title to be responsive in a mobile view*/
+@media(max-width:700px){
+    .sub-header h1{
+        font-size:24px;
+    }
+}
+/*contact.html*/
+.location{
+    width:80%;
+    margin:auto;
+    padding:80px 0;
+}
+/*making it to be centered position*/
+.location iframe{
+    width:100%;
+}
+/*contact-us div*/
+.contact-us{
+    width:80%;
+    margin:auto;
+}
+/*contact-col*/
+.contact-col{
+    margin-bottom:30px;
+    flex-basis:48%;
+}
+/*some space from the left side*/
+.contact-col div{
+    margin-bottom:40px;
+    display:flex;
+    align-items:center;
+}
+/*changing the color of the icons and increasing the font-size*/
+.contact-col .fa{
+    font-size:28px;
+    margin:10px;
+    margin-right:10px;
+    color:#f33446;
+
+}
+/*padding:0 makes the elment with no extra spacing*/
+.contact-col div p{
+    padding:0;
+}
+.contact-col div h5{
+    font-size:20px;
+    margin-bottom:20px;
+    color:#555;
+    font-weight:400;
+
+}
+.contact-col input,.contact-col textarea{
+    width:100%;
+    margin-bottom:15px;
+    padding:17px;
+    outline:none;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EDUCITY</title>
+    <meta name="viewport" content="width=device-width,initial-space=1.0">
+    <link rel="stylesheet" href="college.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--use google fonts-->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/70c542d66f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--the <div> tag is a generic container for styling and layout purposes, while the <section> tag is used to create meaningful content divisions or sections within an HTML document.
+-->
+<section class="sub-header">
+<nav>
+    <a href="college.html"><img src="imageees/c9.jpg"></a><!--if you wrap an image in an a tag the image is clickable, it will direct you to the href of the a tag. So if you want the image to click to the source of the image. You have to use the same url to the image in the href.-->
+<!--img tag says RENDER(give or supply) this href attribute says GO here-->
+<div class="nav-links" id="navLinks"><!--In the JavaScript code var navLinks = document.getElementById('navLinks');, navLinks is like a special pointer or label that allows you to easily work with a specific part of a web page.So, when you use navLinks in your JavaScript code, you're actually working with the HTML element on the web page that has the "navLinks" ID-->
+    <i class="fa fa-xmark" onclick="hideMenu()"></i>
+    <ul>
+        <li><a href="college.html">HOME</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="course.html">COURSE</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+
+</nav>
+<h1>Our Certificate & Online Programs For 2023</h1>
+</section>
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+<img src="imageees/c7.avif">
+<h2>Our Cerificate & Online Programs for 2023</h2>
+<p>At Educity, we are committed to providing our students with high-quality education and opportunities to advance their careers. In 2023, we are excited to introduce a range of new certificate programs and online courses to help our students achieve their academic and professional goals.</p><br>
+<p>Our certificate programs are designed to provide specialized knowledge and skills in a variety of fields, including business, healthcare, technology, and more. Whether you are looking to gain expertise in a specific area or enhance your resume, our certificates are a valuable addition to your educational journey.</p><br>
+<p>Our online programs for 2023 are designed to offer flexibility and convenience for learners. These programs provide an excellent opportunity for individuals who may not be able to attend classes in person. With the support of our dedicated faculty and state-of-the-art online learning resources, you can access the same high-quality education from the comfort of your own home.</p><br>
+<p>We invite you to explore our certificate programs and online courses for 2023 and take the next step towards achieving your academic and professional aspirations. Join us at [College Name] and let us help you reach your full potential."</p><br>
+<div class="comment-box">
+    <h3>Leave a Comment</h3>
+    <form class="comment-form">
+        <input type="text" placeholder="Enter Your Name:">
+        <input type="email" placeholder="Enter The Email:">
+        <textarea rows="4" placeholder="Post Comment"></textarea>
+        <button type="submit" class="red-btn hero-btn">SUBMIT</button>
+    </form>
+
+</div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <!--Span tag is an inline (arranged in a straight line.) used to group and apply styles or scripting to a specific portion of text within a larger block of content. It does not add any line breaks or formatting to the content on its own.does not affect structure of your HTML document.
+                -->
+            <span>Business Analyst</span>
+            <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+                </div>
+                <div>
+                    <span>Machine learning </span>
+                    <span>15</span>
+                    </div>
+                    <div>
+                    <span>Computer Science </span>
+                    <span>34</span>
+                    </div>
+                    <div>
+                    <span>Autocad</span>
+                    <span>42</span>
+                    </div>
+                    <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                    </div>
+                    <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                    </div>
+        </div>
+    </div>
+</section>
+<!--FOOTER-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Welcome to Educity, where excellence in education meets a nurturing environment.<br>Established in 1995, we have been committed to fostering academic growth and personal development.<br> Our dedicated faculty, state-of-the-art facilities, and a vibrant campus community create a holistic learning experience.</p>
+<div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i>
+    <i class="fa fa-twitter"></i>
+</div>
+<p>Made With <i class="fa fa-heart-o"></i> By Educity</p>
+</section>
+<!--Javascript code for toggle menu-->
+<script>
+    var navLinks=document.getElementById('navLinks');
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
